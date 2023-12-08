@@ -43,9 +43,6 @@ section ul li {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -66,3 +63,41 @@ a.white-link:active {
     color: #ffffff; /* Cor branca */
 }
 
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Adicionando estilo para tornar a tabela responsiva */
+@media (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table, th, td {
+        display: block;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    td {
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+}
